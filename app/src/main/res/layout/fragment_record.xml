@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RecordFragment">
+    <Chronometer
+        android:id="@+id/simpleChronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:layout_marginBottom="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/recordprogressbar"
+        />
+    <ProgressBar
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/recordprogressbar"
+        android:max="100"
+        android:progressDrawable="@drawable/progressbarview"
+        android:progress="0"
+        android:indeterminate="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/recordprogressbar"
+        android:text="Press Button to start Recording"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/recordtext"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_mic"
+        android:clickable="true"
+        android:id="@+id/recordbutton"
+        android:focusable="true"
+        android:elevation="15dp"
+        android:layout_below="@+id/recordtext"
+        android:background="@drawable/circularbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"/>
+
+</RelativeLayout>
